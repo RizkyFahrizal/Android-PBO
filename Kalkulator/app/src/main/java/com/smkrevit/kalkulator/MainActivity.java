@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     EditText bil_1,bil_2;
@@ -24,26 +22,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hitung(View view) {
-        bil_1=findViewById(R.id.etBil_1);
-        bil_2=findViewById(R.id.etBil_2);
-        hasil=findViewById(R.id.tvHasil);
+        bil_1 = findViewById(R.id.etBil_1);
+        bil_2 = findViewById(R.id.etBil_2);
+        hasil = findViewById(R.id.tvHasil);
 
         if (bil_1.getText().toString().equals("")){
-            bil_1.setError("harus di isi");
-        }
-        else if (bil_2.getText().toString().equals("")){
-                bil_2.setError("harus di isi");
-        }
-        else {
-                Double a =Double.parseDouble(bil_1.getText().toString());
-                Double b =Double.parseDouble(bil_2.getText().toString());
-                Kalkulator calc= new Kalkulator();
+            bil_1.setError("harus diisi");
+        }else if(bil_2.getText().toString().equals("")){
+            bil_1.setError("harus diisi");
+        }else{
+            double a = Double.parseDouble(bil_1.getText().toString());
+            double b = Double.parseDouble(bil_2.getText().toString());
 
-                double c = calc.perkalian(a,b);
+            Kalkulator calc = new Kalkulator();
 
-                hasil.setText(c +"");
-            }
+            double c = calc.perkalian(a,b);
+
+            hasil.setText(c + "");
+        }
 
 
     }
+
+
+//    public void hitung(View view) {
+//        Toast.makeText(this, "Menampilkan Pesan", Toast.LENGTH_SHORT).show();
+//    }
 }
