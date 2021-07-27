@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvHasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -19,7 +19,7 @@
         android:textSize="100sp" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/etBil_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -29,7 +29,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/etBil_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -39,42 +39,46 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#26D5EC"
+        android:onClick="btnTambah"
         android:text="penambahan" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnKurang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#0394F4"
+        android:onClick="btnKurang"
         android:text="pengurangan" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBagi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#214EF3"
+        android:onClick="btnBagi"
         android:text="pembagian" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnKali"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#132BAF"
+        android:onClick="btnKali"
         android:text="perkalian" />
 </LinearLayout>
