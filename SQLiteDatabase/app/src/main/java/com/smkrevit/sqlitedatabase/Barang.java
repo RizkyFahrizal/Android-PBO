@@ -1,21 +1,21 @@
 package com.smkrevit.sqlitedatabase;
 
 public class Barang {
-    private String idBarang,barang,stok,harga;
+    private String idbarang,barang,stok,harga;
 
-    public Barang(String idBarang, String barang, String stok, String harga) {
-        this.idBarang = idBarang;
+    public Barang(String idbarang, String barang, String stok, String harga) {
+        this.idbarang = idbarang;
         this.barang = barang;
         this.stok = stok;
         this.harga = harga;
     }
 
-    public String getIdBarang() {
-        return idBarang;
+    public String getIdbarang() {
+        return idbarang;
     }
 
-    public void setIdBarang(String idBarang) {
-        this.idBarang = idBarang;
+    public void setIdbarang(String idbarang) {
+        this.idbarang = idbarang;
     }
 
     public String getBarang() {

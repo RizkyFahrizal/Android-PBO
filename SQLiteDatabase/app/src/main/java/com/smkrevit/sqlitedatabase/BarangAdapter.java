@@ -36,7 +36,7 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
         viewHolder.tvBarang.setText(barangList.get(i).getBarang());
         viewHolder.tvStok.setText(barangList.get(i).getStok());
         viewHolder.tvHarga.setText(barangList.get(i).getHarga());
-        
+
         viewHolder.tvMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,11 +48,11 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
                             case R.id.ubah:
-                                Toast.makeText(context, "UBAH", Toast.LENGTH_SHORT).show();
+                                ((MainActivity)context).selectUpdate(barangList.get(i).getIdbarang());
                                 break;
 
                             case R.id.hapus:
-                                ((MainActivity)context).deleteData(barangList.get(i).getIdBarang());
+                                ((MainActivity)context).deleteData(barangList.get(i).getIdbarang());
                                 break;
                         }
                         return false;
