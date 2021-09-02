@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CatalogMovie</string>
+    <string name="search">search</string>
+    <string name="ic_search" />
+</resources>
